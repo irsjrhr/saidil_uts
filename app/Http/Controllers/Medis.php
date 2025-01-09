@@ -12,8 +12,17 @@ class Medis extends Controller{
 
 	public function __construct(){
 		$this->db = DB::table('data_rekam');
+
 	}
 	public function index(){	
+
+		if ( !session('login') ) {
+
+			session()->flash('flasher', "Kamu belum login bre!");
+			return redirect('/login');
+
+		}
+
 
 		$data_rekam = $this->db->get()->map(function($item) {
 			return (array) $item; // Mengonversi setiap objek menjadi array asosiatif

@@ -144,6 +144,16 @@ $menu = [];
 											</a>
 										</div>
 									</div>
+									<div class="row menu_sidebar">
+										<div class="col-1 logo">
+											<i class="fas fa-coffee"></i>
+										</div>
+										<div class="col text_link" style="padding;">  
+											<a href="{{url('logout')}}">
+												Logout
+											</a>
+										</div>
+									</div>
 								</div>
 							</li>
 
