@@ -1,0 +1,698 @@
+
+@font-face {
+  font-family: header;
+  src: url(../font/sen/sen.ttf);
+}
+
+.font_header{
+  font-family: header;
+  margin-bottom: 20px;
+}
+/* --------- CUSTOM COLOR PAGE  --------- */
+/* Default light color */
+body *{
+  color: #000;
+}
+body p{
+  line-height: 30px;
+}
+body.warpoel_admin_basic{
+  background: #FFF;
+  color: inherit;
+  font-size: 18px;
+}
+.bg_primary{
+  background: #00CED1 !important;
+  color: #fff !important;
+}
+.bg_secondary{
+  background: #e5e9f2 !important;
+  color: #000 !important;
+}
+.btn{
+  border-radius: 100px;
+  border: none;
+  height: 45px;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+input.form-control{
+  border-radius: 100px;
+  /*border: none;*/
+  height: 45px;
+  font-size: 1rem;
+  padding-left: 25px;
+  font-weight: bolder;
+
+}
+body .yt_dropdown{
+  background: #fff;
+}
+body .prime_header{
+  background: #ffff;
+}
+body .content_sidebar > .warpoel_nav_sidebar{
+  background: #fff !important;
+  overflow: auto;
+  max-width: 500px;
+}
+.text_flow_multi{
+  /* Tenggelam 2 baris  */
+  font-size: inherit;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  position: relative;
+  color: inherit;
+}
+.text_flow_single{
+  /* Tenggelam 1 baris  */
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: inherit !important;
+}
+/* Default dark color */
+body.warpoel_admin_basic.dark_theme{
+  background: #251B37;
+  color: #fff !important;
+}
+body.warpoel_admin_basic.dark_theme *{
+  color: #fff;
+}
+body.warpoel_admin_basic.dark_theme .yt_dropdown{
+  background: #251B37;
+}
+body.warpoel_admin_basic.dark_theme .prime_header{
+  background: #251B37;
+}
+body.warpoel_admin_basic.dark_theme .content_sidebar > .warpoel_nav_sidebar{
+  background: #251B37 !important;
+  overflow: auto;
+  max-width: 500px;
+  box-shadow: none;
+  border-right : 2px solid #FF577F;
+}
+/* --------- END OF CUSTOM COLOR PAGE  --------- */
+/* -------- Prime Header  --------------- */
+.prime_header{
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding-top: 10px;
+  background: inherit;
+  color: inherit;
+  border: inherit;
+  z-index: 999;
+  box-shadow: 2px 2px 2px #FF577F;
+}
+.prime_header .btn{
+  width: 120px;
+  margin-right: 10px;
+}
+.prime_header a,
+.prime_header i{
+  color: inherit;
+}
+.prime_header i{
+  font-size: 20px;
+}
+.prime_header .btn_sidebar{
+  width: 60px;
+  color: inherit;
+  margin-right: 0;
+}
+.btn_sidebar.close_sidebar{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  display: none;
+  color: red !important;
+}
+.close_sidebar i{
+  color: inherit;
+}
+.prime_header .nav-left{
+}
+.prime_header .nav-right{
+  width: 45%;
+  padding-right: 0;
+}
+.nav_responsive{
+  background: inherit;
+}
+.container_menu .btn_close{
+  display: none;
+}
+.prime_header .menu_responsive{
+  font-size: 30px;
+  display: none;
+}
+.menu_responsive i{
+  font-size: inherit;
+}
+.prime_header .search_container{
+  padding-left: 10px;
+}
+.prime_header .search_container input{
+  border-radius: 0;
+  background: #f4f4f4;
+}
+.prime_header .yt_dropdown:not(.drop_notif .yt_dropdown){
+  padding: 10px;
+}
+.prime_header .drop_account{
+  margin-right: 20px;
+}
+.drop_account .user_img_profile{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.logo_nav_header{
+  width: 60px;
+  height: 60px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.logo_nav_header img{
+  width: 100%;
+  height: 100%;
+}
+.user_profile{
+  width: 50px;
+  height: 50px;
+}
+.user_profile
+.nav_icon{
+  text-align: center;
+  margin-top: 40px;
+}
+.nav_icon .nav-link p{
+  margin-bottom: 0;
+  line-height: 0;
+  margin-top: 20px;
+  font-size: 15px;
+  margin-left: 0;
+}
+/* ------------- End Of Prime Header  --------------- */
+
+
+/* -------- Prime Body  --------------- */
+.prime_body{
+  margin-top: 70px;
+}
+/*content sidebar*/
+.content_sidebar{
+  width: 200px;
+  height: auto;
+  color: inherit;
+}
+.content_sidebar > .warpoel_nav_sidebar{
+  position: fixed;
+  width: inherit;
+  height: 100%;
+  color: inherit;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 1px 1px 1px #cccc;
+  font-size: 17px;
+}
+.warpoel_nav_sidebar .sidebar_menu{
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ccc;  
+}
+.warpoel_nav_sidebar .sidebar_menu{
+  padding-left: 10px;
+}
+.warpoel_nav_sidebar .item_menu{
+  color: #000;
+  border-radius: 15px;
+  font-size: inherit;
+  margin-bottom: 20px;
+}
+.item_menu span{
+  float: left;
+  margin-right: 10px;
+}
+.item_menu .nav-link{
+  padding-top: 0;
+}
+.item_menu i,
+.item_menu .nav-link
+{
+  font-size: 20px;
+}
+.warpoel_nav_sidebar .item_menu.active{
+  background: #000;
+  color: #fff;
+  display: block;
+}
+.logo_sidebar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+}
+.logo_sidebar > img{
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+/*content prime*/
+.content_prime > .container-fluid > .row > div{
+  padding: 0;
+  padding-right: 15px;
+}
+/* ------------- End Of Prime Body  --------------- */
+.title_page, 
+.sub_title_page{
+  font-weight: bolder;
+}
+.title_page{
+  font-size: 35px;
+}
+.sub_title_page{
+  margin-bottom: 40px;
+}
+.section_title_page{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.section_content_page{
+  margin-bottom: 100px;
+}
+/* Custom Card Untuk Product */
+.warpoel_card .img-thumb > img{
+  position: static !important;
+}
+.warpoel_card.product_card{
+  width: 30%;
+  padding: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  transition: .5s;
+}
+/* Saat card hover */
+.warpoel_card.product_card:hover{
+  transform: scale(1.1);
+  box-shadow: 2px 2px 2px #ccc;
+  z-index: 99;
+}
+.product_card .img-thumb{
+  height: 200px;
+}
+.product_card .img-thumb >img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.sub_title_page, .product_name{
+  font-size: 22px;
+}
+.product_card .product_name{
+  line-height: 30px;
+  font-weight: bolder;
+}
+.product_card .product_price,
+.product_card h2{
+  font-size: 20px;
+}
+.product_card .rating_icon{
+  margin-top: 30px;
+}
+.rating_icon i{
+  font-size: 25px;
+  margin-right: 5px;
+  color: gold !important;
+}
+#mobile_nav_header{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 2px solid #ccc;
+  display: none;
+}
+#mobile_nav_header .nav-item a.nav-link{
+  background: #fff;
+  padding: 20px;
+  padding-bottom: 5px;
+  margin-right: 10px;
+  text-align: center;
+}
+#mobile_nav_header .nav-item a.nav-link i{
+  font-size: 20px;
+}
+.carousel.slide button{
+  background: none;
+  border: none;
+}
+.box_toc{
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+.box_toc h3{
+  padding: 10px;
+}
+.box_toc li{
+  cursor: pointer;
+}
+.toc_menu{
+  width: 100%;
+  /*padding: 10px;*/
+}
+
+/*Responsive menu toc mode full*/
+.menu_modefull{
+  display: none;
+}
+.menu_modefull.active{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  z-index: 9999;
+  background: white;
+  border-bottom: 2px solid #ccc;
+}
+.menu_modefull .btn_layout{
+  margin-right: 20px; 
+}
+.menu_modefull .btn_close{
+  position: absolute;
+  right: 20px;
+  color: #fff;
+}
+.layout_box.mode_full{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: white;
+  left: 0;
+  top: 0;
+  z-index: 8888;
+}
+#aspek_hukum.mode_full > div{
+  padding-top: 0;
+}
+/*.layout_box.mode_full p{
+  max-height: 500px;
+  overflow: auto;
+}*/
+.layout_box.mode_full > div{
+  background: #fff;
+  margin-top: 50px;
+  padding-top: 10px;
+}
+
+
+/* Display Ipad, Tablet */
+@media( max-width: 905px ){
+  .content_sidebar{
+    width: 100% !important;
+  }
+}
+@media ( max-width: 993px ){
+  .warpoel_card.product_card{
+    /* Tampilan berjejer 3 kolom kesamping */
+    width: 45%;
+    margin-left: 20px;
+  }
+  /*Prime header*/
+  #mobile_nav_header{
+    display: flex;
+  }
+  /*Icon yang punya relasi responsive di prime header */
+  .title_name_site{
+    display: none;
+  }
+  .prime_header .user_menu_responsive:not(#mobile_nav_header .user_menu_responsive),
+  .prime_header .kelas_menu_responsive:not(#mobile_nav_header .kelas_menu_responsive),
+  .prime_header .fileSource_menu_responsive:not(#mobile_nav_header .fileSource_menu_responsive),
+  .prime_header .hotsale_menu_responsive:not(#mobile_nav_header .hotsale_menu_responsive)
+  {
+    display: none;
+  }
+  .logo_nav_header{
+    margin-left: 0;
+  }
+  /* Content sidebar */
+  .content_sidebar.left{
+    display: none;
+  }
+  .btn_sidebar.close_sidebar{
+    display: block;
+  }
+  .content_sidebar .warpoel_nav_sidebar{
+    z-index: 9999;
+    background: #fff !important;
+  }
+}
+@media ( max-width: 978px ) and ( min-width: 871px ) {
+  .warpoel_card.product_card{
+    /* Tampilan berjejer 2 kolom kesamping */
+    width: 45%;
+    margin-left: 20px;
+  }
+}
+@media ( max-width: 905px ){
+  .warpoel_nav_sidebar{
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+/*Optional sidebar*/
+/*Display Mobile */
+@media ( max-width: 872px and min-width: 768px ){
+  .warpoel_card.product_card{
+    /* Tampilan berjejer 2 kolom kesamping */
+    width: 47%;
+  }
+}
+@media ( max-width: 769px ){
+  .warpoel_card.product_card{
+    /* Tampilan berjejer 2 kolom kesamping */
+    width: 43%;
+    padding: 0;
+    border: none;
+    margin-right: 10px;
+  }
+  .product_card .rating_icon i{
+    font-size: 22px;
+  }
+}
+@media( max-width: 496px ){
+  .warpoel_card.product_card{
+    /* Tampilan berjejer 1 kolom kesamping tapi belom 100% */
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+}
+@media ( max-width: 442px){
+  .drop_account .yt_dropdown{
+    position: absolute;
+    right: -20px;
+  }  
+}
+@media ( max-width: 410px ){
+  #mobile_nav_header .nav-item a.nav-link{
+    margin-right: 0;
+  }
+}
+@media ( max-width: 371px ){
+  #mobile_nav_header .nav-item a.nav-link{
+    padding: 12px;
+  }
+}
+@media( max-width:  322px){
+  .warpoel_card.product_card{
+    /* Tampilan berjejer 1 kolom kesamping */
+    width: 100%;
+  }
+}
+
+/* Content_sidebar sticky */
+.content_sidebar.sticky_sidebar{
+  width: 350px;
+} 
+.sticky_sidebar .warpoel_nav_sticky_sidebar{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+/* Untuk Tab Pills Navigation */
+.view_navigation{
+  border-bottom: 2px solid #ccc;
+}
+.view_navigation .nav-item a{
+  padding: 20px;
+  margin-right: 10px;
+}
+/*Ketika Aktif Dari Hover
+Dan Ketika Aktif Dari Event Javascript*/
+.view_navigation .nav-item a.active, 
+.view_navigation .nav-item a:hover{
+  border-bottom: 2px solid #000;
+}
+.view_navigation_info .box_info_product{
+  display: none;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+.box_info_product p{
+  line-height: 30px;
+}
+/*Ketika Aktif Dari Event Javascript*/
+.view_navigation_info .box_info_product.active{
+  display: block;
+}
+#materi, #file_source{
+  padding: 10px;
+}
+.row_box_info{
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.row_box_info .id_number{
+  width: 30px;
+  /*margin-right: 20px;*/
+}
+.row_box_info .thumb{
+  margin-right: ;
+}
+.row_box_info .thumb > img{
+  width: 100px;
+  height: 70px;
+}
+.row_box_info .detail_info_product p{
+  margin-bottom: 0;
+}
+.detail_info_product p.title_info{
+  font-weight: bolder;
+}
+.detail_info_product p.time_upload_info{
+  font-style: italic;
+}
+#reviews .box_review{
+  margin-bottom: 30px;
+}
+.box_review .card{
+  width: 100%;
+}
+.box_review .img-thumb{
+  margin-bottom: 20px;
+}
+.box_review .img-thumb > img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.box_review .nama_user{
+  margin-bottom: 0;
+  font-weight: bolder;
+}
+.box_review .profesi{
+  color: #999aa4;
+}
+
+
+
+/*Responsive nav*/
+.toggle_responsive{
+  width: 50px;
+  text-align: center;
+  display: none;
+}
+@media( max-width : 629px){
+  .toggle_responsive{
+    display: block !important;
+  }
+  .nav_responsive{
+    position: relative;
+  }
+  .nav_responsive .container_menu{
+    position: fixed;
+    right: 0;
+    box-shadow: -2px -2px 2px 2px #ccc;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #fff;
+  }
+  .container_menu{
+    display: none;  
+    bottom: -100px;
+    transition: .1s;
+  }
+  .container_menu.active{
+    display: block;
+  }
+  .container_menu.animate_menu{
+    bottom: 0px;
+  }
+  .container_menu .btn_close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    text-align: center;
+    width: 50px;
+    padding-top: 0;
+    display: block;
+  }
+  .nav_responsive .container_menu li{
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media ( max-width : 576px ){
+  .title_header{
+    background: rgba(0, 0, 0, .2);
+  }
+}
+@media ( max-width : 534px ){
+  .nav-left{
+    display: none;
+  }
+}
+@media ( max-width : 434px ){
+  .nav-right{
+    width: 62% !important;
+  }
+}
+@media( max-width : 905px){
+  .prime_header .nav-right{
+    width: 60%;
+  }
+}
+@media ( max-width : 769px){
+  .layout2 .row{
+    flex-direction: column-reverse !important;
+  }
+}
+@media( max-width : 744px){
+  .title_nav{
+    display: none;
+  }
+  .prime_header .nav-right{
+    width: 70%;
+  }
+}
+

@@ -1,0 +1,67 @@
+body.warpoel_admin_basic{
+	background: #fff;
+}
+button a{
+	color: #fff;
+}
+.prime_body{
+	margin-top: 0;
+}
+.prime_header{
+	position: relative!important;
+	box-shadow: none;
+	background: none;
+}
+.logo_nav_header{
+	margin-left: 20px !important;
+}
+.title_nav{
+	display: block !Important;
+}
+.nav-left{
+	padding-left: 30px;
+	display: block!important;
+}
+.backdrop{
+	width:100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 600px;
+	z-index: 999;
+}
+.container_form{
+	position: relative;
+}
+
+.box_form{
+	width: 100%;
+	background: #fff;
+	margin-top: 70px;
+}
+@media ( max-width:  1200px){
+	.backdrop{
+		height: 900px;
+	}
+}
+@media ( max-width:  576px){
+	.content_prime, .container_form{
+		position: static;
+	}
+	.box_form{
+		padding: 20px;
+		position: absolute;
+		top: 30%;
+		left: 0;
+		transform: translateY(-30%);
+		z-index: 9999;
+		width: 70%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+@media ( max-width:  427px){
+	.box_form{
+		width: 100%;
+	}
+}

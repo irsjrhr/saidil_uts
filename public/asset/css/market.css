@@ -1,0 +1,70 @@
+.content_sidebar{
+	width: 300px;
+}
+.content_prime{
+	padding: 0;
+}
+.row_nav > div{
+	padding: 20px !important;
+
+}
+.box_nav_search{
+	background: #FF577F;
+}
+.form_search{
+
+}
+.btn_cari{
+	width: 150px;
+}
+.form_search,.btn_cari{
+	border-radius: 3px !important;
+}
+.box_nav_sort > div > .row > div{
+	padding: 0;
+}
+.box_nav_sort .sub_judulInput{
+	font-size: 17px;
+}
+.box_nav_sort .form-control{
+	text-align: center !important;
+}
+.box_detail_btn{
+	width: 100%;
+	border-top: 2px solid #ccc;
+	padding-top: 20px;
+	position: relative;
+}
+.card .btn_label{
+	width: 60px;
+	height: 30px;
+	font-size: 10px;
+	border-radius: 4px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.card .title_harga{
+	font-size: 30px;
+}
+.card .btn_buy{
+	width: 100%;
+	background: #FF577F;
+}
+
+/*Sidebar*/
+.container_sidebar .warpoel_nav_sidebar{
+	overflow: auto;
+	margin-bottom: 50px !important;
+}
+.logo_sidebar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.sosmed_link{
+	margin-right: 10px;
+}
+.sosmed_link img{
+	width: 40px !important;
+}
